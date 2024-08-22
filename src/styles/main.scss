@@ -1,0 +1,25 @@
+// Importing utilities
+@import 'utils/variables';
+// @import 'utils/mixins';
+// @import 'utils/functions';
+// @import 'utils/placeholders';
+
+// Importing base styles
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+@import 'base/colors';
+
+// Importing layout styles
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/flex';
+
+// Importing component styles
+@import 'components/buttons';
+@import 'components/cards';
+
+// Importing page-specific styles
+// @import 'pages/home';

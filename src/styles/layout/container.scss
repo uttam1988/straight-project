@@ -1,0 +1,33 @@
+// Import Variables
+@import '../utils/variables.scss';
+
+// Container Class
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
+
+  @media (min-width: $breakpoint-mobile) {
+    max-width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    max-width: $container-max-width-sm;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    max-width: $container-max-width-md;
+  }
+
+  @media (min-width: $breakpoint-desktop-large) {
+    max-width: $container-max-width-lg;
+  }
+
+  @media (min-width: $breakpoint-desktop-extra-large) {
+    max-width: $container-max-width-xl;
+  }
+}

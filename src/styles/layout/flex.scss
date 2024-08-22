@@ -1,0 +1,130 @@
+@import '../utils/variables.scss';
+
+// Flexbox Container Properties
+@mixin flex-container(
+  $direction: row,
+  $wrap: wrap,
+  $justify-content: flex-start,
+  $align-items: center,
+  $align-content: stretch
+) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  align-content: $align-content;
+}
+
+// Flexbox Item Properties
+@mixin flex-item(
+  $flex: 1,
+  $align-self: auto,
+  $flex-grow: 0,
+  $flex-shrink: 1,
+  $flex-basis: auto
+) {
+  flex: $flex;
+  align-self: $align-self;
+  flex-grow: $flex-grow;
+  flex-shrink: $flex-shrink;
+  flex-basis: $flex-basis;
+}
+
+// Flexbox Alignment Utilities
+@mixin flex-align(
+  $align-items: flex-start,
+  $align-self: auto,
+  $align-content: flex-start
+) {
+  align-items: $align-items;
+  align-self: $align-self;
+  align-content: $align-content;
+}
+
+// Flexbox Justify Utilities
+@mixin flex-justify(
+  $justify-content: flex-start
+) {
+  justify-content: $justify-content;
+}
+
+// Flexbox Container Directions
+@mixin flex-direction(
+  $direction: row,
+  $wrap: nowrap
+) {
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+// Alignment Mixins
+@mixin flex-align-start {
+  @include flex-align(flex-start);
+}
+
+@mixin flex-align-center {
+  @include flex-align(center);
+}
+
+@mixin flex-align-end {
+  @include flex-align(flex-end);
+}
+
+@mixin flex-align-content-start {
+  @include flex-align(flex-start, auto, flex-start);
+}
+
+@mixin flex-align-content-center {
+  @include flex-align(flex-start, auto, center);
+}
+
+@mixin flex-align-content-end {
+  @include flex-align(flex-start, auto, flex-end);
+}
+
+// Justify Content Mixins
+@mixin flex-justify-start {
+  @include flex-justify(flex-start);
+}
+
+@mixin flex-justify-center {
+  @include flex-justify(center);
+}
+
+@mixin flex-justify-between {
+  @include flex-justify(space-between);
+}
+
+@mixin flex-justify-around {
+  @include flex-justify(space-around);
+}
+
+@mixin flex-justify-evenly {
+  @include flex-justify(space-evenly);
+}
+
+// Flex Direction Mixins
+@mixin flex-row {
+  @include flex-direction(row);
+}
+
+@mixin flex-row-reverse {
+  @include flex-direction(row-reverse);
+}
+
+@mixin flex-column {
+  @include flex-direction(column);
+}
+
+@mixin flex-column-reverse {
+  @include flex-direction(column-reverse);
+}
+
+@mixin flex-wrap {
+  @include flex-container(row, wrap);
+}
+
+@mixin flex-nowrap {
+  @include flex-container(row, nowrap);
+}

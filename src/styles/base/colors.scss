@@ -1,0 +1,46 @@
+@import '../utils/variables.scss';
+
+.text-primary { color: $primary-color; }
+.text-primary-dark { color: $primary-dark-color; }
+.text-primary-light { color: $primary-light-color; }
+
+.text-secondary { color: $secondary-color; }
+.text-secondary-dark { color: $secondary-dark-color; }
+.text-secondary-light { color: $secondary-light-color; }
+
+.text-accent { color: $accent-color; }
+.text-accent-dark { color: $accent-dark-color; }
+.text-accent-light { color: $accent-light-color; }
+
+.text-white { color: $white; }
+.text-black { color: $black; }
+.text-gray-dark { color: $gray-dark; }
+.text-gray { color: $gray; }
+.text-gray-light { color: $gray-light; }
+
+.bg-primary { background-color: $primary-color; }
+.bg-primary-dark { background-color: $primary-dark-color; }
+.bg-primary-light { background-color: $primary-light-color; }
+
+.bg-secondary { background-color: $secondary-color; }
+.bg-secondary-dark { background-color: $secondary-dark-color; }
+.bg-secondary-light { background-color: $secondary-light-color; }
+
+.bg-accent { background-color: $accent-color; }
+.bg-accent-dark { background-color: $accent-dark-color; }
+.bg-accent-light { background-color: $accent-light-color; }
+
+.bg-white { background-color: $white; }
+.bg-black { background-color: $black; }
+.bg-gray-dark { background-color: $gray-dark; }
+.bg-gray { background-color: $gray; }
+.bg-gray-light { background-color: $gray-light; }
+
+.bg-background { background-color: $background-color; }
+.bg-background-dark { background-color: $background-dark-color; }
+.bg-background-light { background-color: $background-light-color; }
+
+.border-primary { border-color: $primary-color; }
+.border-secondary { border-color: $secondary-color; }
+.border-accent { border-color: $accent-color; }
+.border-gray { border-color: $gray; }

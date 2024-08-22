@@ -1,0 +1,58 @@
+// Import Variables
+@import '../utils/variables.scss';
+
+// Footer Styles
+$footer-bg-color: $gray-dark;
+$footer-text-color: $white;
+$footer-padding: 1rem;
+$footer-height: 60px;
+
+.footer {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  padding: $footer-padding;
+  height: $footer-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__logo {
+  font-size: 1rem;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer__nav-item {
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  color: $footer-text-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-light-color;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+
+  .social-icon {
+    margin-left: 0.5rem;
+    color: $footer-text-color;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-light-color;
+    }
+  }
+}

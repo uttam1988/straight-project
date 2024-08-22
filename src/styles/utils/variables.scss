@@ -1,0 +1,63 @@
+// Typography Variables
+$font-stack: 'Poppins', sans-serif;
+$base-font-size: 16px;
+$heading-font-weight: 700;
+$body-font-weight: 400;
+$line-height: 1.6;
+
+// Responsive Font Sizes
+$font-size-mobile: 14px;
+$font-size-tablet: 14px;
+$font-size-desktop: 16px;
+
+// Breakpoints
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-desktop-large: 1280px;
+$breakpoint-desktop-extra-large: 1536px;
+
+// Container Max-Width Variables
+$container-max-width-xl: 1536px;
+$container-max-width-lg: 1280px;
+$container-max-width-md: 1024px;
+$container-max-width-sm: 768px;
+$container-max-width-xs: 640px;
+
+// Padding
+$container-padding: 1rem; // 16px default padding for container
+
+// Color Variables
+$primary-color: #3498db;       // Example: Blue
+$primary-dark-color: #2980b9;  // Darker shade of primary
+$primary-light-color: #5dade2; // Lighter shade of primary
+
+$secondary-color: #2ecc71;       // Example: Green
+$secondary-dark-color: #27ae60;  // Darker shade of secondary
+$secondary-light-color: #58d68d; // Lighter shade of secondary
+
+$accent-color: #e74c3c;       // Example: Red
+$accent-dark-color: #c0392b;  // Darker shade of accent
+$accent-light-color: #f1948a; // Lighter shade of accent
+
+$white: #ffffff;
+$black: #000000;
+$gray-dark: #2c3e50;   // Dark Gray
+$gray: #95a5a6;        // Medium Gray
+$gray-light: #ecf0f1;  // Light Gray
+
+$background-color: #ffffff;        // Main Background
+$background-dark-color: #f2f2f2;   // Darker Background (e.g., sections)
+$background-light-color: #fafafa;  // Lighter Background
+
+$text-color: #333333;          // Main Text Color
+$text-light-color: #7f8c8d;    // Lighter Text Color
+
+$border-color: #dcdcdc;        // Default Border Color
+
+$success-color: #28a745;
+$warning-color: #f39c12;
+$error-color: #e74c3c;
+
+// Gradient Example
+$primary-gradient: linear-gradient(45deg, $primary-color, $primary-dark-color);

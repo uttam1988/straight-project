@@ -1,0 +1,75 @@
+// Import Variables
+@import '../utils/variables.scss';
+@import '../layout/flex.scss';
+
+// Header Styles
+$header-bg-color: $primary-color;
+$header-text-color: $white;
+$header-padding: 1rem;
+$header-height: 60px;
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    .sub-header {
+        background-color: $gray;
+
+        .sub-header-flex {
+            @include flex-container;
+            gap: 10px;
+            padding: 12px 0;
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+    .main-header {
+        padding: 12px 0;
+
+        .main-header-flex {
+            @include flex-container($justify-content: space-between);
+
+            nav {
+                @include flex-container;
+                gap: 3rem;
+
+                .logo {
+                    width: 150px;
+                    height: 80px;
+                }
+
+                .menu {
+                    margin: 0;
+                    padding: 0;
+                    display: none;
+                    gap: 2rem;
+
+                    li {
+                        list-style: none;
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+
+                    @media (min-width: $breakpoint-desktop) {
+                            @include flex-container;
+                    }
+                }
+            }
+
+            .main-header-settings {
+                @include flex-container;
+                gap: 2rem;
+
+                form {
+                    display: none;
+                    @media (min-width: $breakpoint-desktop) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

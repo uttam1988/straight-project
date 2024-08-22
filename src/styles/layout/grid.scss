@@ -1,0 +1,44 @@
+@import '../utils/variables.scss';
+
+// Grid Utilities
+$grid-gap: 1rem;
+$grid-columns: 12;
+$grid-rows: auto;
+$grid-auto-flow: row;
+
+// Grid Container Mixin
+@mixin grid-container(
+  $columns: $grid-columns,
+  $rows: $grid-rows,
+  $gap: $grid-gap,
+  $auto-flow: $grid-auto-flow
+) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-template-rows: $rows;
+  gap: $gap;
+  grid-auto-flow: $auto-flow;
+}
+
+// Grid Item Mixin
+@mixin grid-item($column-start, $column-end, $row-start: auto, $row-end: auto) {
+  grid-column: $column-start / $column-end;
+  grid-row: $row-start / $row-end;
+}
+
+// Example Grid Layout
+.grid-example {
+  @include grid-container;
+}
+
+.grid-item-1 {
+  @include grid-item(1, 3);
+}
+
+.grid-item-2 {
+  @include grid-item(3, 6);
+}
+
+.grid-item-3 {
+  @include grid-item(6, 12);
+}
