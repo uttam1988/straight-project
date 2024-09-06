@@ -1,0 +1,16 @@
+@import '../utils/variables.scss';
+
+.primary-cta {
+    background-color: $black;
+    color: #fff;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        opacity: .8;
+        transition: all;
+        transition-delay: 10ms;
+    }
+}

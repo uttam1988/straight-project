@@ -13,7 +13,7 @@
 // Importing layout styles
 @import 'layout/container';
 @import 'layout/header';
-@import 'layout/footer';
+// @import 'layout/footer';
 @import 'layout/grid';
 @import 'layout/flex';
 
@@ -22,4 +22,4 @@
 @import 'components/cards';
 
 // Importing page-specific styles
-// @import 'pages/home';
+@import 'pages/home';

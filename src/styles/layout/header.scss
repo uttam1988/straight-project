@@ -37,8 +37,8 @@ header {
                 gap: 3rem;
 
                 .logo {
-                    width: 150px;
-                    height: 80px;
+                    width: 130px;
+                    height: 70px;
                 }
 
                 .menu {
@@ -49,7 +49,6 @@ header {
 
                     li {
                         list-style: none;
-                        font-weight: bold;
                         font-size: 18px;
                     }
 
@@ -61,12 +60,28 @@ header {
 
             .main-header-settings {
                 @include flex-container;
-                gap: 2rem;
+                gap: 1rem;
 
-                form {
+                form.search-form {
                     display: none;
+                    position: relative;
+                    z-index: 1;
                     @media (min-width: $breakpoint-desktop) {
                         display: block;
+                    }
+                    .search-field {
+                        width: 400px;
+                        padding: .5rem 1rem;
+                        border: 1px solid #ddd;
+                        font-size: 14px;
+                    }
+
+                    .search-cta {
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        cursor: pointer;
+                        z-index: 999;
                     }
                 }
             }

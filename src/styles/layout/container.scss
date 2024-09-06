@@ -31,3 +31,15 @@
     max-width: $container-max-width-xl;
   }
 }
+
+.section-spacer {
+    padding: 1rem 0;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding: 2rem 0;
+    }
+
+    @media (min-width: $breakpoint-desktop-large) {
+       padding: 4rem 0;
+    }
+}

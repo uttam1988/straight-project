@@ -1,60 +1,4 @@
 @import '../utils/variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
 
 // Base Font Size for Responsive Scaling
 html {
@@ -82,7 +26,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: $heading-font-weight;
   line-height: 1.2;
-  margin-bottom: 0.5em;
 }
 
 
@@ -182,10 +125,10 @@ h6 {
   }
 }
 
-// Paragraphs
-p {
-  margin-bottom: 1.5em;
+p.extra-small {
+  font-size: 12px;
 }
+
 
 // Links
 a {
@@ -194,16 +137,6 @@ a {
   &:hover {
     text-decoration: underline;
   }
-}
-
-// Lists
-ul, ol {
-  margin-bottom: 1.5em;
-  padding-left: 1.5em;
-}
-
-li {
-  margin-bottom: 0.5em;
 }
 
 // Blockquotes
