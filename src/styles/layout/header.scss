@@ -13,7 +13,7 @@ header {
     flex-direction: column;
 
     .sub-header {
-        background-color: $gray;
+        background-color: $gray-light;
 
         .sub-header-flex {
             @include flex-container;
